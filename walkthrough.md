@@ -85,12 +85,17 @@ Some rules:
 This is a decent starting off point, but I'd encourage you to experiment with the prompts and styles. I've hardcoded the script to use the following parameters for zeroscope, but feel free to play with these too. These just happened to work well for me.
 
 ```
-"negative_prompt": "noisy, washed out, ugly, distorted, broken",
-"num_frames": 24,
-"width": 1024,
-"height": 576,
-"guidance_scale": 17.5,
-"fps": 12 # 2s videos
+{
+  num_frames: 24,
+  fps: 12, # 2s videos
+  width: 576,
+  height: 320,
+  guidance_scale: 12.5,
+  num_inference_steps: 50,
+  model: '576w',
+  negative_prompt: 'noisy, washed out, ugly, distorted, low quality, garish',
+  prompt: '<your-prompt>'
+}
 ```
 
 So now my workflow looks like a lot of this:
