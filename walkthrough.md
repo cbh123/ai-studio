@@ -12,8 +12,7 @@ Planet Zearth narrated by David Ai-ttenborough (skip to 1:40 for the penguin sce
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I made a nature documentary. Or, I helped AI make a nature documentary. <br><br>Written by GPT4, narrated by ElevenLabs David Attenborough, and filmed by Zeroscope.<br><br>Episode 1 — The Glow Leopard <a href="https://t.co/mYQp6fJuDC">pic.twitter.com/mYQp6fJuDC</a></p>&mdash; Charlie Holtz (@charliebholtz) <a href="https://twitter.com/charliebholtz/status/1673466353938776068?ref_src=twsrc%5Etfw">June 26, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
-Here's a walkthrough of how I make them.
+Here's how you can make your own AI movies.
 
 ## Script
 It all starts with the script. Like any good AI filmmaker, I ask ChatGPT for a rough draft. Here's the conversation I had with GPT-4 to create the [David Attenborough clip](https://chat.openai.com/share/95379044-c1c1-4c6f-8141-6381c65d9b3f).
