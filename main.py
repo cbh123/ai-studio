@@ -4,7 +4,7 @@ import replicate
 from urllib.request import urlretrieve
 import logging
 
-PROJECT_NAME = "wes"
+PROJECT_NAME = "project"
 
 logging.basicConfig(
     filename="studio.log",  # Specify the file name for logging
@@ -25,11 +25,6 @@ def music(prompt, num_outputs):
 
 def video(prompt, num_outputs, style=None):
     # make videos with zeroscope https://replicate.com/anotherjesse/zeroscope-v2-xl
-
-    # model = replicate.models.get("stability-ai/stable-diffusion")
-    # version = model.versions.get(
-    #     "db21e45d3f7023abc2a46ee38a23973f6dce16bb082a930b0c49861f96d1e5bf"
-    # )
     model = replicate.models.get("anotherjesse/zeroscope-v2-xl")
     version = model.versions.get(
         "1f0dd155aeff719af56f4a2e516c7f7d4c91a38c7b8e9e81808e7c71bde9b868"
