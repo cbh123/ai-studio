@@ -12,21 +12,30 @@ Planet Zearth narrated by David Ai-ttenborough (skip to 1:40 for the penguin sce
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I made a nature documentary. Or, I helped AI make a nature documentary. <br><br>Written by GPT4, narrated by ElevenLabs David Attenborough, and filmed by Zeroscope.<br><br>Episode 1 — The Glow Leopard <a href="https://t.co/mYQp6fJuDC">pic.twitter.com/mYQp6fJuDC</a></p>&mdash; Charlie Holtz (@charliebholtz) <a href="https://twitter.com/charliebholtz/status/1673466353938776068?ref_src=twsrc%5Etfw">June 26, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Here's how you can make your own AI movies.
+Here's I walkthrough of how I make these AI movies, and how you can too.
 
 ## Script
 It all starts with the script. Like any good AI filmmaker, I ask ChatGPT for a rough draft. Here's the conversation I had with GPT-4 to create the [David Attenborough clip](https://chat.openai.com/share/95379044-c1c1-4c6f-8141-6381c65d9b3f).
 
-I added in a bit of a human touch (I thought it would be funnier if the glow leopard encounters a penguin rather than a fungi), but the gist is AI.
+<img width="880" alt="chatgpt_1" src="https://github.com/cbh123/ai-studio/assets/14149230/7f144cba-dfdf-48e0-9df2-6c2a53d4e295">
+
+<img width="893" alt="chatgpt_script" src="https://github.com/cbh123/ai-studio/assets/14149230/4c3dac73-2a3e-4cc9-86bb-c6ada38b3dac">
+
+The script will need a bit of a human touch (I thought it would be funnier if the glow leopard encounters a penguin rather than a fungi). But ChatGPT is a great starting point. 
 
 GPT is really good at silly puns. or at least better than me. Here's a chat I had to create a [Barbie-Oppenheimer crossover](https://chat.openai.com/share/496c8ef0-32c0-442f-bcfd-a5e67575b946)
+
+<img width="869" alt="puns" src="https://github.com/cbh123/ai-studio/assets/14149230/129ba076-94b1-48a9-901a-48f7fff50021">
 
 Note that the AI is good at brainstorming a lot of ideas fast. But many of these scripts are missing something that's hard to put a finger on. That's where us humans come in :)
 
 ## Narrator
-The second stage is creating a narrator. There are two ways I'd recommend doing this: the break the terms of service way, and the this is what you're supposed to do way. I shouldn't talk much about the first way, but it may involve finding a YouTube clip of an speaker you like, downloading it as an mp3 using pytube, uploading it into audacity and trimming the best parts, and then uploading to [ElevenLabs](https://beta.elevenlabs.io/voice-lab) voice cloning feature. The second way is to use a [community generated voice](https://beta.elevenlabs.io/voice-library), which are pretty good too. I use [[Ixel] Male older American voice, fairly deep too](https://beta.elevenlabs.io/voice-lab/share/4af011ff3556e6d9fa2a801fee549fb5de141c2daab509635a67c1a7c819e15a/VrpwKyFPv8etbiWgnoyA) as a narrator for a few of these videos — he makes a good trailer narrator.
+Phase II — let's bring in a narrator to our production. There are two ways you can do this: the break the terms of service way, and the this is what you're supposed to do way. I shouldn't talk much about the first way, but it may involve finding a YouTube clip of an speaker you like, downloading it as an mp3 using pytube, uploading it into audacity and trimming the best parts, and then uploading to [ElevenLabs](https://beta.elevenlabs.io/voice-lab) voice cloning feature. 
 
-[exporteleven]
+The second way is to use a [community generated voice](https://beta.elevenlabs.io/voice-library), which are pretty good too. I use [[Ixel] Male older American voice, fairly deep too](https://beta.elevenlabs.io/voice-lab/share/4af011ff3556e6d9fa2a801fee549fb5de141c2daab509635a67c1a7c819e15a/VrpwKyFPv8etbiWgnoyA) as a narrator for a few of these videos — he makes a good trailer narrator
+
+<img width="385" alt="ixel" src="https://github.com/cbh123/ai-studio/assets/14149230/537dc6b7-27eb-4e57-8cdf-b825ed51bb63">
+
 
 ## Videos + Music + Editing (the fun part)
 Now comes the fun part: making the videos and music, and stitching everything together. Open up iMovie and start a new project.
