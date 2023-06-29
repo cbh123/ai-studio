@@ -10,7 +10,7 @@ https://github.com/cbh123/ai-studio/assets/14149230/2bb85f46-9b62-49b3-9316-d821
 
 Planet Zearth narrated by David Ai-ttenborough (skip to 1:40 for the penguin scene):
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I made a nature documentary. Or, I helped AI make a nature documentary. <br><br>Written by GPT4, narrated by ElevenLabs David Attenborough, and filmed by Zeroscope.<br><br>Episode 1 — The Glow Leopard <a href="https://t.co/mYQp6fJuDC">pic.twitter.com/mYQp6fJuDC</a></p>&mdash; Charlie Holtz (@charliebholtz) <a href="https://twitter.com/charliebholtz/status/1673466353938776068?ref_src=twsrc%5Etfw">June 26, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+[Watch Planet Zearth](https://twitter.com/charliebholtz/status/1673466353938776068)
 
 Here's I walkthrough of how I make these AI movies, and how you can too.
 
