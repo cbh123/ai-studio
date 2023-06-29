@@ -46,8 +46,8 @@ Creating AI videos is an iterative process. The videos that [zeroscope](https://
 
 Open up a terminal and clone this repo:
 ```
-git clone <>
-cd ai_studio
+git clone https://github.com/cbh123/ai-studio
+cd ai-studio
 ```
 
 Install Replicate:
@@ -55,19 +55,22 @@ Install Replicate:
 pip install replicate
 export REPLICATE_API_TOKEN=<your-token>
 ```
-You can setup a Replicate account [here](https://replicate.com/accounts/billing) if you don't have one.
+If you don't have an API token, you can create a Replicate account [here](https://replicate.com/accounts/billing).
 
 Now, you can run the script with this command:
 
 `python main.py "prompt for your content" <number-of-outputs> --type <video/music> --style <a-style-that-you-want-appended-to-all-videos> &`
 
-For example, here's how I created 3 videos of a glowing leopard:
+For example, here's how to create 3 videos of a glowing leopard:
 
 ```
 python main.py "bioluminescent leopards walking in the forest" 3 --type video --style "national geographic, 4k &"
 ```
 
-I always add a `&` to the end of the command so that it runs in the background. This way you can send off a bunch of different requests to Replicate without having to open up new terminals or wait for the predictions to finish. To see progress, you can run `tail -F studio.log` to tail the logs (quit with `ctrl+c`)
+
+> I always add a `&` to the end of the command so that it runs in the background. This way you can send off a bunch of
+> different requests to Replicate without having to open up new terminals or wait for the predictions to finish. To see
+> progress, you can run `tail -F studio.log` to tail the logs (quit with `ctrl+c`)
 
 What kinds of prompts should I create videos with, you ask? You're going to need a bit of trial and error. But to get started, let's ask our AI friend. This GPT-4 prompt works decently well (in the same chat where you created the script):
 
