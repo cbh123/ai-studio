@@ -2,7 +2,11 @@ My new favorite hobby is making trailers for films that don't exist.
 
 Bugsy Shadows — A New York Mystery:
 
+https://github.com/cbh123/ai-studio/assets/14149230/9e34b452-9c47-47bf-a598-22ac600dd68c
+
 Vanderbilt Express by Wes Anderson:
+
+https://github.com/cbh123/ai-studio/assets/14149230/2bb85f46-9b62-49b3-9316-d82116e65379
 
 Planet Zearth narrated by David Ai-ttenborough (skip to 1:46 for the penguin scene):
 
