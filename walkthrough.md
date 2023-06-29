@@ -2,35 +2,52 @@ My new favorite hobby is making trailers for films that don't exist.
 
 Bugsy Shadows — A New York Mystery:
 
+https://github.com/cbh123/ai-studio/assets/14149230/9e34b452-9c47-47bf-a598-22ac600dd68c
+
 Vanderbilt Express by Wes Anderson:
 
-Planet Zearth narrated by David Ai-ttenborough (skip to 1:46 for the penguin scene):
+https://github.com/cbh123/ai-studio/assets/14149230/2bb85f46-9b62-49b3-9316-d82116e65379
 
-Here's a walkthrough of how I make them.
+Planet Zearth narrated by David Ai-ttenborough (skip to 1:40 for the penguin scene):
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I made a nature documentary. Or, I helped AI make a nature documentary. <br><br>Written by GPT4, narrated by ElevenLabs David Attenborough, and filmed by Zeroscope.<br><br>Episode 1 — The Glow Leopard <a href="https://t.co/mYQp6fJuDC">pic.twitter.com/mYQp6fJuDC</a></p>&mdash; Charlie Holtz (@charliebholtz) <a href="https://twitter.com/charliebholtz/status/1673466353938776068?ref_src=twsrc%5Etfw">June 26, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Here's I walkthrough of how I make these AI movies, and how you can too.
 
 ## Script
 It all starts with the script. Like any good AI filmmaker, I ask ChatGPT for a rough draft. Here's the conversation I had with GPT-4 to create the [David Attenborough clip](https://chat.openai.com/share/95379044-c1c1-4c6f-8141-6381c65d9b3f).
 
-I added in a bit of a human touch (I thought it would be funnier if the glow leopard encounters a penguin rather than a fungi), but the gist is AI.
+<img width="880" alt="chatgpt_1" src="https://github.com/cbh123/ai-studio/assets/14149230/7f144cba-dfdf-48e0-9df2-6c2a53d4e295">
+
+<img width="893" alt="chatgpt_script" src="https://github.com/cbh123/ai-studio/assets/14149230/4c3dac73-2a3e-4cc9-86bb-c6ada38b3dac">
+
+The script will need a bit of a human touch (I thought it would be funnier if the glow leopard encounters a penguin rather than a fungi). But ChatGPT is a great starting point. 
 
 GPT is really good at silly puns. or at least better than me. Here's a chat I had to create a [Barbie-Oppenheimer crossover](https://chat.openai.com/share/496c8ef0-32c0-442f-bcfd-a5e67575b946)
+
+<img width="869" alt="puns" src="https://github.com/cbh123/ai-studio/assets/14149230/129ba076-94b1-48a9-901a-48f7fff50021">
 
 Note that the AI is good at brainstorming a lot of ideas fast. But many of these scripts are missing something that's hard to put a finger on. That's where us humans come in :)
 
 ## Narrator
-The second stage is creating a narrator. There are two ways I'd recommend doing this: the break the terms of service way, and the this is what you're supposed to do way. I shouldn't talk much about the first way, but it may involve finding a YouTube clip of an speaker you like, downloading it as an mp3 using pytube, uploading it into audacity and trimming the best parts, and then uploading to [ElevenLabs](https://beta.elevenlabs.io/voice-lab) voice cloning feature. The second way is to use a [community generated voice](https://beta.elevenlabs.io/voice-library), which are pretty good too. I use [[Ixel] Male older American voice, fairly deep too](https://beta.elevenlabs.io/voice-lab/share/4af011ff3556e6d9fa2a801fee549fb5de141c2daab509635a67c1a7c819e15a/VrpwKyFPv8etbiWgnoyA) as a narrator for a few of these videos — he makes a good trailer narrator.
+Phase II — let's bring in a narrator to our production. There are two ways you can do this: the break the terms of service way, and the this is what you're supposed to do way. I shouldn't talk much about the first way, but it may involve finding a YouTube clip of an speaker you like, downloading it as an mp3 using pytube, uploading it into audacity and trimming the best parts, and then uploading to [ElevenLabs](https://beta.elevenlabs.io/voice-lab) voice cloning feature. 
 
-[exporteleven]
+The second way is to use a [community generated voice](https://beta.elevenlabs.io/voice-library), which are pretty good too. I use [[Ixel] Male older American voice, fairly deep too](https://beta.elevenlabs.io/voice-lab/share/4af011ff3556e6d9fa2a801fee549fb5de141c2daab509635a67c1a7c819e15a/VrpwKyFPv8etbiWgnoyA) as a narrator for a few of these videos — he makes a good trailer narrator
+
+<img width="385" alt="ixel" src="https://github.com/cbh123/ai-studio/assets/14149230/537dc6b7-27eb-4e57-8cdf-b825ed51bb63">
+
 
 ## Videos + Music + Editing (the fun part)
-Now comes the fun part: making the videos and music, and stitching everything together. Open up iMovie and start a new project.
+Now comes the fun part: making the videos and music, and stitching everything together. Open up iMovie and start a new movie project.
 
-Creating the videos is a very iterative process. The videos from Zeroscope are amazing, but also weird, so it helps to make a lot of videos and then keep the best ones. After some trial and error, I made a Python script that makes this easy. The script creates X number of videos/music for you and then saves the output locally. It all runs in the background. Then I open up Finder in the directory where these clips are saved and drag the ones I like into iMovie.
+<img width="337" alt="Screenshot 2023-06-29 at 11 40 35 AM" src="https://github.com/cbh123/ai-studio/assets/14149230/0083404e-3f96-4741-ac36-2586c0698638">
+
+Creating AI videos is an iterative process. The videos that [zeroscope](https://replicate.com/anotherjesse/zeroscope-v2-xl) can create are amazing, but also weird, so it helps to make a lot of videos and then keep the best ones. I made a Python script that makes this easy. The script creates X number of videos/music for you and then saves the output locally. It all runs in the background. Then you can open up Finder in the directory where the clips are saved and drag the ones you like into iMovie.
 
 Open up a terminal and clone this repo:
 ```
-git clone <>
-cd ai_studio
+git clone https://github.com/cbh123/ai-studio
+cd ai-studio
 ```
 
 Install Replicate:
@@ -38,21 +55,24 @@ Install Replicate:
 pip install replicate
 export REPLICATE_API_TOKEN=<your-token>
 ```
-You can setup a Replicate account [here](https://replicate.com/accounts/billing) if you don't have one.
+If you don't have an API token, you can create a Replicate account [here](https://replicate.com/accounts/billing).
 
 Now, you can run the script with this command:
 
 `python main.py "prompt for your content" <number-of-outputs> --type <video/music> --style <a-style-that-you-want-appended-to-all-videos> &`
 
-For example, here's how I created 3 videos of a glowing leopard:
+For example, here's how to create 3 videos of a glowing leopard:
 
 ```
 python main.py "bioluminescent leopards walking in the forest" 3 --type video --style "national geographic, 4k &"
 ```
 
-I always add a `&` to the end of the command so that it runs in the background. This way you can send off a bunch of different requests to Replicate without having to open up new terminals or wait for the predictions to finish. To see progress, you can run `tail -F studio.log` to tail the logs (quit with `ctrl+c`)
 
-What kinds of prompts should I create videos with, you ask? You're going to need a bit of trial and error. But to get started, let's ask our AI friend. This GPT-4 prompt works decently well (in the same chat where you created the script):
+> I always add a `&` to the end of the command so that it runs in the background. This way you can send off a bunch of
+> different requests to Replicate without having to open up new terminals or wait for the predictions to finish. To see
+> progress, you can run `tail -F studio.log` to tail the logs (quit with `ctrl+c`)
+
+As for the kinds of prompts you should use to create videos with——you're going to need a bit of trial and error. But to get started, let's ask our AI friend. This GPT-4 prompt works decently well (in the same chat where you created the script):
 
 ```
 I want to create a series of videos to make this trailer, and I'd like your help describing what the videos should look like for my text-to-video model. Can you describe all the videos I'll need to create as if you were sending it as a prompt to a text-to-video model?
@@ -64,18 +84,23 @@ Some rules:
 - Don't say action verbs. Just describe in plain detail what's in the video
 ```
 
-[example t2v prompts]
+<img width="834" alt="example_t2v_prompts" src="https://github.com/cbh123/ai-studio/assets/14149230/591fa31c-61f5-4766-a000-6ef8556a32ed">
 
 
-This is a decent starting off point, but I'd encourage you to experiment with the prompts and styles. I've hardcoded the script to use the following parameters for zeroscope, but feel free to play with these too. These just happened to work well for me.
+This is a decent starting off point, but I'd encourage you to experiment with the prompts and styles. My friend [fofrAI](https://twitter.com/fofrAI) got my started with the following parameters for zeroscope, but feel free to play with these too. 
 
 ```
-"negative_prompt": "noisy, washed out, ugly, distorted, broken",
-"num_frames": 24,
-"width": 1024,
-"height": 576,
-"guidance_scale": 17.5,
-"fps": 12 # 2s videos
+{
+  num_frames: 24, # zeroscrope struggles with higher values here
+  fps: 12, # 2s videos
+  width: 576,
+  height: 320,
+  guidance_scale: 12.5,
+  num_inference_steps: 50,
+  model: '576w',
+  negative_prompt: 'noisy, washed out, ugly, distorted, low quality, garish',
+  prompt: '<your-prompt>'
+}
 ```
 
 So now my workflow looks like a lot of this:
