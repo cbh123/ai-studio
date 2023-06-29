@@ -57,7 +57,9 @@ export REPLICATE_API_TOKEN=<your-token>
 ```
 If you don't have an API token, you can create a Replicate account [here](https://replicate.com/accounts/billing).
 
-Now, you can run the script with this command:
+Optionally, change the `PROJECT_NAME` on line 7 in `main.py` to a project name of your choice. This tells ai studio where to save your output.
+
+Now, you can run the script with this command, and the prompts will save to the ai-studio/videos/<project-name> directory:
 
 `python main.py "prompt for your content" <number-of-outputs> --type <video/music> --style <a-style-that-you-want-appended-to-all-videos> &`
 
@@ -66,7 +68,6 @@ For example, here's how to create 3 videos of a glowing leopard:
 ```
 python main.py "bioluminescent leopards walking in the forest" 3 --type video --style "national geographic, 4k &"
 ```
-
 
 > I always add a `&` to the end of the command so that it runs in the background. This way you can send off a bunch of
 > different requests to Replicate without having to open up new terminals or wait for the predictions to finish. To see
@@ -86,7 +87,6 @@ Some rules:
 
 <img width="834" alt="example_t2v_prompts" src="https://github.com/cbh123/ai-studio/assets/14149230/591fa31c-61f5-4766-a000-6ef8556a32ed">
 
-
 This is a decent starting off point, but I'd encourage you to experiment with the prompts and styles. My friend [fofrAI](https://twitter.com/fofrAI) got my started with the following parameters for zeroscope, but feel free to play with these too. 
 
 ```
@@ -105,35 +105,37 @@ This is a decent starting off point, but I'd encourage you to experiment with th
 
 So now my workflow looks like a lot of this:
 
-"Hmmm, I want to see a shot of a family before we show individual characters"
+> "Hmmm, I want to see a shot of a family before we show individual characters"
 
 Run:
 ```
 python main.py "a family wearing fancy clothes in a palatial room" --style "wide angle, wes anderson, colorful" --type video 3 &
 ```
 
-Then I decided that the "disillusioned inventor, Augustus" needed to be frustrated with his progress creating the worlds quietest blender:
+> Then I decided that the "disillusioned inventor, Augustus" needed to be frustrated with his progress creating the worlds quietest blender:
 
 ```
 python main.py "a man in a suit, frustrated, hands on head" --style "wes anderson, colorful" --type video 2 &
 ```
 
-Etc. Creating the music is similar. Instead of `--type video`, it's `--type music`. Also note that `--style` doesn't do anything for music generation.
+Creating the music is a similar process. Instead of `--type video`, it's `--type music`. Also note that `--style` doesn't do anything for music generation.
 
 Here's the prompt I used for the Wes Anderson trailer:
 ```
 python main.py "upbeat, classical music" --type music 2 &
 ```
 
-Now that we have a nice selection of narration, video clips, and music, it's a matter of dragging into iMovie and iterating from there. I don't have many iMovie tricks, but it looks like a lot of this:
+Now that we have a nice selection of narration, video clips, and music, it's a matter of dragging into iMovie and iterating from there. This process looks a lot like this. A lot of dragging, dropping, shuffling, and then creating new videos and repeating:
 
-[imovie dragging]
+https://github.com/cbh123/ai-studio/assets/14149230/5bf32837-1cea-4761-a351-d5ba9443f93c
 
-and sometimes this trick that fades out the sound:
+I like this trick that fades out the sound:
 
-[imovie fade out sound]
+https://github.com/cbh123/ai-studio/assets/14149230/f6b349be-83f5-4902-89a9-77a1333f65fb
 
-Some tips:
+Can't wait to see what you make!
+
+## Tips:
 - The `--style` is helpful for keeping a consistent, um, style. I'd play with [prompter](https://prompter.fofr.ai/) to find some styles that might fit. Some styles I've had success with:
   - macro
   - film noir
@@ -144,4 +146,11 @@ Some tips:
 - Generally I run 2-3 minimum videos per generation. The results can be off sometimes, so it's nice to be able to pick the best ones to drag into iMovie.
 - Don't forget the `&` at the end of the command! This makes the python script run in the background.
 - Within VSCode, the alt+cmd+R shortcut is really nice for opening up the content before pulling into iMovie. Example:
--
+
+https://github.com/cbh123/ai-studio/assets/14149230/01f3b692-d4b2-4782-a665-46ce565c783c
+
+
+
+
+
+
