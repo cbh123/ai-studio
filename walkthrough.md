@@ -15,13 +15,13 @@ Planet Zearth narrated by David Ai-ttenborough (skip to 1:40 for the penguin sce
 Here's I walkthrough of how I make these AI movies, and how you can too.
 
 ## Script
-It all starts with the script. Like any good AI filmmaker, I ask ChatGPT for a rough draft. Here's the conversation I had with GPT-4 to create the [David Attenborough clip](https://chat.openai.com/share/95379044-c1c1-4c6f-8141-6381c65d9b3f).
+It all starts with the script. Like any good AI filmmaker, let's ask ChatGPT for a rough draft. Here's the conversation I had with GPT-4 to create the [David Attenborough movie](https://chat.openai.com/share/95379044-c1c1-4c6f-8141-6381c65d9b3f):
 
 <img width="880" alt="chatgpt_1" src="https://github.com/cbh123/ai-studio/assets/14149230/7f144cba-dfdf-48e0-9df2-6c2a53d4e295">
 
 <img width="893" alt="chatgpt_script" src="https://github.com/cbh123/ai-studio/assets/14149230/4c3dac73-2a3e-4cc9-86bb-c6ada38b3dac">
 
-The script will need a bit of a human touch (I thought it would be funnier if the glow leopard encounters a penguin rather than a fungi). But ChatGPT is a great starting point. 
+ChatGPT is a solid starting point, but I find the scripts need a bit of a human touch (I thought it would be funnier if the glow leopard encounters a penguin rather than a fungi).
 
 GPT is really good at silly puns. or at least better than me. Here's a chat I had to create a [Barbie-Oppenheimer crossover](https://chat.openai.com/share/496c8ef0-32c0-442f-bcfd-a5e67575b946)
 
