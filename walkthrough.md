@@ -38,9 +38,11 @@ The second way is to use a [community generated voice](https://beta.elevenlabs.i
 
 
 ## Videos + Music + Editing (the fun part)
-Now comes the fun part: making the videos and music, and stitching everything together. Open up iMovie and start a new project.
+Now comes the fun part: making the videos and music, and stitching everything together. Open up iMovie and start a new movie project.
 
-Creating the videos is a very iterative process. The videos from Zeroscope are amazing, but also weird, so it helps to make a lot of videos and then keep the best ones. After some trial and error, I made a Python script that makes this easy. The script creates X number of videos/music for you and then saves the output locally. It all runs in the background. Then I open up Finder in the directory where these clips are saved and drag the ones I like into iMovie.
+<img width="337" alt="Screenshot 2023-06-29 at 11 40 35 AM" src="https://github.com/cbh123/ai-studio/assets/14149230/0083404e-3f96-4741-ac36-2586c0698638">
+
+Creating AI videos is an iterative process. The videos that [zeroscope](https://replicate.com/anotherjesse/zeroscope-v2-xl) can create are amazing, but also weird, so it helps to make a lot of videos and then keep the best ones. I made a Python script that makes this easy. The script creates X number of videos/music for you and then saves the output locally. It all runs in the background. Then you can open up Finder in the directory where the clips are saved and drag the ones you like into iMovie.
 
 Open up a terminal and clone this repo:
 ```
