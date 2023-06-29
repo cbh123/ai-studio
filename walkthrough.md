@@ -72,7 +72,7 @@ python main.py "bioluminescent leopards walking in the forest" 3 --type video --
 > different requests to Replicate without having to open up new terminals or wait for the predictions to finish. To see
 > progress, you can run `tail -F studio.log` to tail the logs (quit with `ctrl+c`)
 
-What kinds of prompts should I create videos with, you ask? You're going to need a bit of trial and error. But to get started, let's ask our AI friend. This GPT-4 prompt works decently well (in the same chat where you created the script):
+As for the kinds of prompts you should use to create videos with——you're going to need a bit of trial and error. But to get started, let's ask our AI friend. This GPT-4 prompt works decently well (in the same chat where you created the script):
 
 ```
 I want to create a series of videos to make this trailer, and I'd like your help describing what the videos should look like for my text-to-video model. Can you describe all the videos I'll need to create as if you were sending it as a prompt to a text-to-video model?
@@ -84,14 +84,14 @@ Some rules:
 - Don't say action verbs. Just describe in plain detail what's in the video
 ```
 
-[example t2v prompts]
+<img width="834" alt="example_t2v_prompts" src="https://github.com/cbh123/ai-studio/assets/14149230/591fa31c-61f5-4766-a000-6ef8556a32ed">
 
 
-This is a decent starting off point, but I'd encourage you to experiment with the prompts and styles. I've hardcoded the script to use the following parameters for zeroscope, but feel free to play with these too. These just happened to work well for me.
+This is a decent starting off point, but I'd encourage you to experiment with the prompts and styles. My friend [fofrAI](https://twitter.com/fofrAI) got my started with the following parameters for zeroscope, but feel free to play with these too. 
 
 ```
 {
-  num_frames: 24,
+  num_frames: 24, # zeroscrope struggles with higher values here
   fps: 12, # 2s videos
   width: 576,
   height: 320,
